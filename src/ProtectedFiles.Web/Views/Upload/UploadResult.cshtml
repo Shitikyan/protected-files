@@ -1,0 +1,14 @@
+﻿@model UploadFileResult
+@{
+    ViewData["Title"] = "UploadResult";
+}
+
+<h2>Upload Result</h2>
+@if (Model.Success)
+{
+    <h3 class="text-success">Success</h3>
+}
+else
+{
+    <h3 class="text-danger">ERROR: @Model.Exception.Message</h3>
+}
